@@ -239,7 +239,7 @@ export default function AkhilPortfolio() {
           </h2>
 
           <div className="relative max-w-4xl mx-auto">
-            <div className="absolute top-0 bottom-0 left-0 md:left-1/2 w-1 bg-gradient-to-b from-cyan-500 via-violet-500 to-transparent -translate-x-1/2"></div>
+            <div className="absolute top-0 bottom-0 left-0 md:left-1/2 w-1 bg-gradient-to-b from-cyan-500 via-violet-500 to-transparent -translate-x-1/2 z-[1]"></div>
 
             {/* Job 1 */}
             <div className="relative mb-16 md:grid md:grid-cols-2 gap-8 items-center">
@@ -248,14 +248,16 @@ export default function AkhilPortfolio() {
                 <p className="text-cyan-400 font-medium">Mu Sigma Business Solutions</p>
                 <p className="text-sm text-slate-500">Aug 2025 – Nov 2025</p>
               </div>
-              <div className="absolute left-0 md:left-1/2 -translate-x-[5px] md:-translate-x-1/2 w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_15px_rgba(6,182,212,1)] z-10"></div>
-              <GlowingCard className="md:col-start-2">
-                <ul className="space-y-2 text-sm text-slate-300">
-                  <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Improved network reliability resulting in 15% downtime reduction.</li>
-                  <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Built ML models for latency, speed, and congestion analysis.</li>
-                  <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Tech: Python, SQL, Power BI, Figma, Agile.</li>
-                </ul>
-              </GlowingCard>
+              <div className="absolute left-0 md:left-1/2 -translate-x-[5px] md:-translate-x-1/2 w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_15px_rgba(6,182,212,1)] z-[2]"></div>
+              <div className="md:col-start-2 relative z-[2]">
+                <GlowingCard>
+                  <ul className="space-y-2 text-sm text-slate-300">
+                    <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Improved network reliability resulting in 15% downtime reduction.</li>
+                    <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Built ML models for latency, speed, and congestion analysis.</li>
+                    <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Tech: Python, SQL, Power BI, Figma, Agile.</li>
+                  </ul>
+                </GlowingCard>
+              </div>
             </div>
 
             {/* Job 2 */}
@@ -265,14 +267,16 @@ export default function AkhilPortfolio() {
                 <p className="text-violet-400 font-medium">CodeClause</p>
                 <p className="text-sm text-slate-500">Remote</p>
               </div>
-              <div className="absolute left-0 md:left-1/2 -translate-x-[5px] md:-translate-x-1/2 w-3 h-3 bg-violet-400 rounded-full shadow-[0_0_15px_rgba(139,92,246,1)] z-10"></div>
-              <GlowingCard className="order-1 md:text-right">
-                <ul className="space-y-2 text-sm text-slate-300 inline-block text-left">
-                  <li className="flex items-start"><span className="text-violet-500 mr-2">▹</span> Developed robust Credit Card Fraud Detection ML models.</li>
-                  <li className="flex items-start"><span className="text-violet-500 mr-2">▹</span> Utilized Jupyter Notebooks for EDA and model training.</li>
-                  <li className="flex items-start"><span className="text-violet-500 mr-2">▹</span> Received Letter of Recommendation for performance.</li>
-                </ul>
-              </GlowingCard>
+              <div className="absolute left-0 md:left-1/2 -translate-x-[5px] md:-translate-x-1/2 w-3 h-3 bg-violet-400 rounded-full shadow-[0_0_15px_rgba(139,92,246,1)] z-[2]"></div>
+              <div className="order-1 md:text-right relative z-[2]">
+                <GlowingCard>
+                  <ul className="space-y-2 text-sm text-slate-300 inline-block text-left">
+                    <li className="flex items-start"><span className="text-violet-500 mr-2">▹</span> Developed robust Credit Card Fraud Detection ML models.</li>
+                    <li className="flex items-start"><span className="text-violet-500 mr-2">▹</span> Utilized Jupyter Notebooks for EDA and model training.</li>
+                    <li className="flex items-start"><span className="text-violet-500 mr-2">▹</span> Received Letter of Recommendation for performance.</li>
+                  </ul>
+                </GlowingCard>
+              </div>
             </div>
 
             {/* Job 3 */}
@@ -281,13 +285,15 @@ export default function AkhilPortfolio() {
                 <h3 className="text-2xl font-bold text-white">Data Analytics Apprentice</h3>
                 <p className="text-cyan-400 font-medium">MedTourEasy</p>
               </div>
-              <div className="absolute left-0 md:left-1/2 -translate-x-[5px] md:-translate-x-1/2 w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_15px_rgba(6,182,212,1)] z-10"></div>
-              <GlowingCard className="md:col-start-2">
-                <ul className="space-y-2 text-sm text-slate-300">
-                  <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Conducted Bayesian analysis comparing handedness lifespan.</li>
-                  <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Delivered myth-busting analytical conclusions through viz.</li>
-                </ul>
-              </GlowingCard>
+              <div className="absolute left-0 md:left-1/2 -translate-x-[5px] md:-translate-x-1/2 w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_15px_rgba(6,182,212,1)] z-[2]"></div>
+              <div className="md:col-start-2 relative z-[2]">
+                <GlowingCard>
+                  <ul className="space-y-2 text-sm text-slate-300">
+                    <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Conducted Bayesian analysis comparing handedness lifespan.</li>
+                    <li className="flex items-start"><span className="text-cyan-500 mr-2">▹</span> Delivered myth-busting analytical conclusions through viz.</li>
+                  </ul>
+                </GlowingCard>
+              </div>
             </div>
           </div>
         </Section>
