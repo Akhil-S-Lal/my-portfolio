@@ -239,7 +239,7 @@ export default function AkhilPortfolio() {
           </h2>
 
           <div className="relative max-w-4xl mx-auto">
-            <div className="absolute left-0 md:left-1/2 h-full w-0.5 bg-gradient-to-b from-cyan-500 via-violet-500 to-transparent"></div>
+            <div className="absolute top-0 bottom-0 left-0 md:left-1/2 w-1 bg-gradient-to-b from-cyan-500 via-violet-500 to-transparent -translate-x-1/2 z-0"></div>
 
             {/* Job 1 */}
             <div className="relative mb-16 md:grid md:grid-cols-2 gap-8 items-center">
